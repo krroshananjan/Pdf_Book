@@ -42,7 +42,6 @@ class KDPController extends Controller
         }
         $pdf->AddPage();
 
-        // Set content layout for last page (back cover)
         $pdf->writeHTML('<h1 style="text-align: center;">Back Cover</h1>', true, false, true, false, '');
         $pdf->Output('kdp_printable_book.pdf', 'I');
     }
